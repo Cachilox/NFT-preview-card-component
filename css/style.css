@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+}
+
+.card {
+  width: 330px;
+  height: 546px;
+  margin: 60px auto;
+  border-radius: 16px;
+  padding: 26px;
+  background-color: #14253d;
+}
+.card__image {
+  background-image: url("../images/image-equilibrium.jpg");
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  border-radius: 8px;
+  margin-bottom: 26px;
+  overflow: hidden;
+}
+.card__eye {
+  opacity: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  background-image: url(../images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+.card__eye:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.card .hover-base,
+.card .card__title:hover,
+.card .card__name:hover {
+  color: rgba(0, 255, 247, 0.5);
+  cursor: pointer;
+}
+.card__title {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 18px;
+}
+.card__description {
+  color: white;
+  font-size: 0.9em;
+  line-height: 20px;
+  color: #8bacda;
+  font-weight: 300;
+}
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+.card__value {
+  color: rgba(0, 255, 247, 0.5);
+}
+.card__clock {
+  color: #8bacda;
+}
+.card__line {
+  border-top: 1px solid #8bacda;
+  margin-top: 15px;
+}
+.card__creator {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+.card__photo {
+  background-image: url(../images/image-avatar.png);
+  width: 35px;
+  height: 36px;
+  background-size: cover;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card__paragraph {
+  color: #8bacda;
+  font-size: 0.85em;
+  margin-left: 15px;
+}
+.card__name {
+  color: white;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.attribution a {
+  color: #8bacda;
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: 354px;
+    height: 600px;
+  }
+  .card__image {
+    width: 300px;
+    height: 300px;
+  }
+  .card__description {
+    font-size: 1em;
+  }
+  .card__creator {
+    margin-top: 20px;
+  }
+  .card__details {
+    margin-bottom: 30px;
+  }
+}
